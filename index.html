@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <!--head為網頁資訊-->
+    <head>
+        <!--meta標籤-->
+        <!--包在裡面的標籤都要做縮排-->
+        <!--網頁編碼-->
+        <!--可省略為<meta charset="UTF-8"/>-->
+        <meta charset="UTF-8"></meta>
+        <!--下面一行為告訴搜尋引擎關於網站的描述-->
+        <meta name="description" content="html練習網站" />
+        <meta name="author" content="小花" />
+        <meta name="keywords" content="htme,小花，練習" />
+        <!--視口根據裝置縮放，初始縮放比100%-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>html的網頁</title>
+    </head>
+    <body>
+        <!--基本標籤-->
+        <!--h1~h6最重要的標題到最不重要，字大小及標題-->
+        <h2>第一篇文章</h2>
+        <!--p表內容，b為粗體字,i為斜體-->
+        <p>今天<i><b>天氣</b></i>真好</p>
+        <!--br標籤為患行中間不需要加入任何內容，所以<br>可以省略，空幾行加幾個-->
+        <br/>
+        <br/>
+        <!--hr為加分隔線標籤，中間也不須加任何內容-->  
+        <hr/>
+        <h2>第二篇文章</h2>
+        <p>今天天氣<b><i>不好</i></b></p>
+
+        <!--連結圖片-->
+        <!--a標籤為連結，href為其網址屬性，在開始和關閉標籤之間放入連結名子-->
+        <a href="https://google.com">google網站</a>
+        <!--連結內部網站-->
+        <a href="resource/page2.html">第二頁</a>
+        <a href="resource/dir/page3.html">第三頁</a>
+        <a href="resource/flower.jpg">花廊</a>
+        <br>
+        <br>
+
+        <!--找到圖片後右見新分頁開啟圖片這時連結才是正確，只給定一個參數會等比例縮小-->
+        <img src="http://pic.5tu.cn/uploads/allimg/1811/pic_5tu_big_201811291400122020.jpg" height="500" />
+        <img src="resource/flower.jpg"  height="500"/>
+        <!--影片嵌入-->
+        <br>
+        <video src="resource/00001.mp4" controls width="500"></video>
+        <!--youtube直接分享遷入複製連結-->
+        <iframe width="460" height="280"  src="https://www.youtube.com/embed/uSAowUhjd_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--x列表&表格-->
+        <!--ol為列表標籤可以有順序，用type來做順序選擇，若用ul就無順序，li為內容-->
+        <ol type="I">
+            <li>google</li>
+            <li>fb</li>
+            <li>ig</li>
+            <li>ptt</li>
+        </ol>
+
+        <!--表格2*3-->
+        <!--table表示創立一個表格-->
+        <table width="300" >
+            <!--tr標籤表示一行-->
+            <tr>
+                <!--td表一行內容-->
+                <td>date</td>
+                 <td>math</td>
+                <td>science</td>
+            </tr>
+            <tr>
+                <td>2/8</td>
+                <td>80</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>2/9</td>
+                <td>90</td>
+                <td>80</td>
+            </tr>
+
+        </table>
+
+        <!--html容器div & span-->
+        <!--利用div把內容包在裡面一次更改 -->
+        <div style="color:brown">
+            <table width="300">
+            <tr>
+                <td>date</td>
+                <td>math</td>
+                <td>science</td>
+            </tr>
+            <tr>
+                <td>2/10</td>
+                <td>50</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>2/11</td>
+                <td>60</td>
+                <td>70</td>
+            </tr>
+        </table></div>
+        <!--span和div的差別，一個換行一個站既有的空間-->
+        <span>span1</span>
+        <span>span2</span>
+        <div>div1</div>
+        <div>div2</div>
+
+        <!--html的輸入標籤-->
+        <!--type輸入標籤類型-->
+        <!--placeholder為提示輸入-->
+        <input type="text" placeholder="請輸入帳號" />
+        <br>
+        <br>
+        <!--password屬性可以隱藏-->
+        <input type="password"  placeholder="請輸入密碼"/>
+        <br>
+        <br>
+        <input type="date" />
+        <br>
+        <br>
+        <input type="range" />
+        <br>
+        <br>
+        <input type="file" />
+        <br>
+        <br>
+        <!--checkbox打勾勾欄位-->
+        <input type="checkbox" />
+        <br>
+        <br>
+        <!--textarea可以放入大量文字及縮放大小，若輸入文字可為預設-->
+        <textarea>你好</textarea>
+        <!--f12或對其案右鍵檢查可知道html怎麼編寫-->
+    </body>
+        <!--html的運行模式為從上到下-->
+</html>
